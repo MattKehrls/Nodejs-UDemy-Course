@@ -1,4 +1,4 @@
-console.log("Starting Notes.js");
+// console.log("Starting Notes.js");
 
 const fs = require('fs');
 
@@ -35,7 +35,8 @@ var addNote =  (title, body) => {
 };
 
 var getAll = () => {
-    console.log("Getting all notes");
+    //console.log("Getting all notes");
+    return fetchNotes();
     
 }
 
@@ -57,6 +58,7 @@ var removeNote = (title) => {
 } 
 
 var logNote = (note) => {
+    //debugger;//break on this line, and use REPL to outpout note
     console.log("---");
     console.log(`Title: ${note.title}`);
     console.log(`Body: ${note.body}`);
